@@ -1,0 +1,116 @@
+
+.product-nav {
+   width: 87.5%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-nav__title {
+    font-size: 60px;
+}
+
+.product-nav__price {
+    font-size: 25px;
+}
+
+.product-nav__promotion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.product-nav__ai {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.product-nav__ai-link {
+    text-decoration: none;
+}
+
+.product-nav__cta {
+    font-size: 18px;
+    height: fit-content;
+    padding: 16px 16px;
+    border-radius: 32px;
+    background-color: #f5f5f7;
+    color: black;
+    border: none;
+    text-decoration: none;
+}
+
+.shipping-banner {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    transform: translateY(-100%); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.shipping-banner--show {
+    transform: translateY(0);
+}
+
+.shipping-banner__header {
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #d8d5d5;
+    font-size: 25px;
+}
+
+.shipping-banner__details {
+    padding: 10px 70px;
+    border-bottom: 2px solid #d8d5d5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 832px) {
+    
+    .product-nav {
+        width: 92%; 
+        margin-top: 50px; 
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 20px;
+    }
+
+
+    .product-nav__title {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .product-nav__price {
+        font-size: 18px; 
+    }
+
+
+    .product-nav__promotion,
+   .product-nav__ai, .product-nav__ai-link  {
+        font-size: 16px; 
+    }
+
+
+    .product-nav__cta {
+        font-size: 16px;
+        padding: 12px 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .shipping-banner__header,.shipping-banner__details {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+}
