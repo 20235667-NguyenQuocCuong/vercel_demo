@@ -37,6 +37,12 @@
     display: flex;
     list-style: none;
     gap: 30px;
+    overflow-x: auto;
+    padding: 0 0 20px;
+}
+
+.product-nav__item {
+    flex: 0 0 100px;
 }
 
 .product-nav__link {
@@ -49,6 +55,7 @@
 .product-nav__image {
     width: 100px;
     height: 65px;
+    object-fit: contain;
 }
 
 .product-nav__text {
